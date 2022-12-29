@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000
 const mongoURL = process.env.MONGO_URL || 'mongodb://localhost:27017/dev'
 
 async function initMongo() {
-  console.log('Initialising MongoDB...')
+  console.log('Initialising MongoDB...', mongoURL)
   let success = false
   while (!success) {
     try {
